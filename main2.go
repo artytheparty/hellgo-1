@@ -19,6 +19,8 @@ func main() {
 		}
 	*/
 
+	fmt.Printf("Please Type your language\n")
+
 	switch locale {
 	case "en":
 		greeting = "Hello"
