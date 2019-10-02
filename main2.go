@@ -1,12 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	var locale, greeting string
-	var languages = [4]string{"en", "es", "de", "fr"}
-	locale = languages[1]
-
+	/*
+		var locale, greeting string
+		var languages = [4]string{"en", "es", "de", "fr"}
+		locale = languages[1]
+	*/
+	var greeting string
+	/*var languages = [4]string{"en", "es", "de", "fr"}*/
 	/*
 		if locale == "en" {
 			greeting = "Hello"
@@ -19,9 +24,11 @@ func main() {
 		}
 	*/
 
+	var lan string
 	fmt.Printf("Please Type your language\n")
+	fmt.Scanln(&lan)
 
-	switch locale {
+	switch lan {
 	case "en":
 		greeting = "Hello"
 	case "es":
