@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func main() {
+func main2() {
 	/*
 		var locale, greeting string
 		var languages = [4]string{"en", "es", "de", "fr"}
