@@ -37,6 +37,8 @@ func main() {
 		greeting = "Guten Tag"
 	case "fr":
 		greeting = "Bonjour"
+	case "ko":
+		greeting = "Annyeonghaseyo"
 	default:
 		greeting = "Yo"
 	}
