@@ -5,20 +5,13 @@ import (
 	"strings"
 )
 
-func main2() {
+func main() {
 	/*
 		var locale, greeting string
 		var languages = [4]string{"en", "es", "de", "fr"}
 		locale = languages[1]
 	*/
 	var greeting string
-	/*
-		var translations = make(map[string]string)
-		translations["en"] = "Hello"
-		translations["es"] = "Hola"
-		translations["en"] = "Hello"
-		translations["en"] = "Hello"
-	*/
 	/*var languages = [4]string{"en", "es", "de", "fr"}*/
 	/*
 		if locale == "en" {
@@ -31,12 +24,6 @@ func main2() {
 			greeting = "Yo"
 		}
 	*/
-
-	/*
-		fmt.Printf("Enter language code:")
-		fmt.Scanf("%s", &locale)
-	*/
-
 	var lan string
 	fmt.Printf("Please Type your language\n")
 	fmt.Scanln(&lan)
@@ -53,7 +40,6 @@ func main2() {
 	} else {
 		lan = "yo"
 	}
-
 	switch lan {
 	case "en":
 		greeting = "Hello"
@@ -68,9 +54,5 @@ func main2() {
 	default:
 		greeting = "Yo"
 	}
-
 	fmt.Printf(greeting + ", Go!\n")
-	/*
-		fmt.Println(translations[locale], ", Go!")
-	*/
 }
