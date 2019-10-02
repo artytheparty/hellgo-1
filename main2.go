@@ -28,6 +28,18 @@ func main() {
 	fmt.Printf("Please Type your language\n")
 	fmt.Scanln(&lan)
 
+	if lan == "english" {
+		lan = "en"
+	} else if lan == "espanol" {
+		lan = "es"
+	} else if lan == "deutsch" {
+		lan = "de"
+	} else if lan == "korean" {
+		lan = "ko"
+	} else {
+		lan = "yo"
+	}
+
 	switch lan {
 	case "en":
 		greeting = "Hello"
