@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 func main() {
@@ -27,14 +28,15 @@ func main() {
 	var lan string
 	fmt.Printf("Please Type your language\n")
 	fmt.Scanln(&lan)
+	var lan_lower = strings.ToLower(lan)
 
-	if lan == "english" {
+	if lan_lower == "english" {
 		lan = "en"
-	} else if lan == "espanol" {
+	} else if lan_lower == "espanol" {
 		lan = "es"
-	} else if lan == "deutsch" {
+	} else if lan_lower == "deutsch" {
 		lan = "de"
-	} else if lan == "korean" {
+	} else if lan_lower == "korean" {
 		lan = "ko"
 	} else {
 		lan = "yo"
