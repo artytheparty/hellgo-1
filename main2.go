@@ -12,6 +12,13 @@ func main2() {
 		locale = languages[1]
 	*/
 	var greeting string
+	/*
+		var translations = make(map[string]string)
+		translations["en"] = "Hello"
+		translations["es"] = "Hola"
+		translations["en"] = "Hello"
+		translations["en"] = "Hello"
+	*/
 	/*var languages = [4]string{"en", "es", "de", "fr"}*/
 	/*
 		if locale == "en" {
@@ -23,6 +30,11 @@ func main2() {
 		} else {
 			greeting = "Yo"
 		}
+	*/
+
+	/*
+		fmt.Printf("Enter language code:")
+		fmt.Scanf("%s", &locale)
 	*/
 
 	var lan string
@@ -58,4 +70,7 @@ func main2() {
 	}
 
 	fmt.Printf(greeting + ", Go!\n")
+	/*
+		fmt.Println(translations[locale], ", Go!")
+	*/
 }
